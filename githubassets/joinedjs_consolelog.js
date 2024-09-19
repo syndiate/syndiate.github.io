@@ -577,6 +577,7 @@
 			var currIndex = 0;
             var m = (s, o) => {
 			console.log((currIndex.toString()) + ": " + t.src);
+			currIndex++;
                     t.onerror = t.onload = null, clearTimeout(l);
                     var a = e[_];
                     if (delete e[_], t.parentNode && t.parentNode.removeChild(t), a && a.forEach(e => e(o)), s) return s(o)
