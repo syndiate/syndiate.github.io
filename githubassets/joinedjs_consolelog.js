@@ -575,8 +575,12 @@
                 }
             t || (n = !0, (t = document.createElement("script")).charset = "utf-8", t.timeout = 120, s.nc && t.setAttribute("nonce", s.nc), t.src = s.tu(_), 0 === t.src.indexOf(window.location.origin + "/") || (t.crossOrigin = "anonymous")), e[_] = [o];
 			var currIndex = 0;
+			if (!window.allJS) {
+				window.allJS = [];
+			}
             var m = (s, o) => {
 			console.log((currIndex.toString()) + ": " + t.src);
+			window.allJS.push(t.src);
 			currIndex++;
                     t.onerror = t.onload = null, clearTimeout(l);
                     var a = e[_];
